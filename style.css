@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'broadwayregular';
+    src: url('./font/broadwayregular.ttf'),
+         url('./font/broadway-webfont.woff2') format('woff2'),
+         url('./font/broadway-webfont.woff') format('woff'),
+         url('./font/broadway-webfont.svg#broadwayregular') format('svg');
+}
+
+body{
+	background-color: black;
+}
+
+p{
+	color: white;
+	font-family: helvetica , sans-serif;
+
+}
+
+h1 {
+	color: orange;
+	/**font-family: 'broadwayregular';**/
+	font-family: 'americantypewritercondensed';
+	font-size: 3em; 
+	position: relative;
+	text-align: center;
+	text-shadow: 2px 2px 3px black;
+}
+
+h4{
+	color: rgb(0,149,182);
+	font-family: verdana;
+}
+
+
+h3{
+	color: rgb(0,149,182);
+	font-family: 'lobster', cursive;
+	text-align: center;
+}
+/*commentaire test*/
+
+a{
+	color: white;
+	text-decoration: none;
+	font-family: 'lobster', cursive;
+}
+a:hover {
+	color: orange;
+	transform: scale(1.2);
+	}
+
+.logosite {
+	display: block;
+	margin-top: left;
+}
+
+#links {
+	float: right;
+	padding: 5px;
+	padding-right: 25px;
+	padding-top: 20px;
+	transition: 1.5s;
+}
+
+#button{
+	background-color: rgb(0,149,182);
+	border: solid white;
+	padding: 20px;
+	border-radius: 25px;
+
+}
+
+#button: hover{
+	color: orange;
+	background-color: white;
+	transition: 1.5s;
+	transform: scale (1.2); /*voir pourquoi ça ne foncionne pas*/
+}
+
+#hero{
+background: url('./imagehead.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 5%;
+padding-bottom: 10%;
+} 
+
+nav{
+	background-color: rgba(0,0,0,0.9);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#bandeau {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	padding: 5%;
+}
+
+#apropos{
+	display: flex;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#apropos img {
+	border-radius: 5px;
+}
+
+#apropos_texte p{
+	padding-right: 15%
+	padding-left: 5%;
+	text-align: justify;
+	padding: 15%;
+	font-family: 'americantypewritercondensed';
+}
+
+#services{
+	display: flex;
+	background-color: rgba(48,48,48,0.9);
+	padding: 20px;
+	text-align: center;
+}
+
+.services_items p{
+	text-align: justify;
+	padding: 20px; 
+	font-family: 'americantypewritercondensed';    
+}
+
+@media screen and (max-width: 900px) {
+	#apropos{
+		flex-direction: column;
+	}
+	#apropos img{
+		padding-bottom: 5%;
+		margin: 0; 
+	}
+	#apropos p{
+		padding-top: 5%;
+	}
+
+	#services{
+		flex-direction: column;
+	}
+}
+
+#lead {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+#lead h2{
+	color: orange;
+	padding-bottom: 5%;
+	font-family: 'americantypewritercondensed';
+}
+
+
